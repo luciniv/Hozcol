@@ -1,0 +1,928 @@
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ALIGNMENT SECTION ----------------------------------------*/
+.fc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fcol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tc {text-align: center;}
+
+.tl {text-align: left;}
+
+/* COLOR SECTION ----------------------------------------*/
+.nav-color {background-color: #000000;}
+
+.bg-color {background-color: #101010;}
+
+.block-color {background-color: #1E1E1E}
+
+.white {background-color: #ffffff;}
+
+.text-color {color: #ffffff}
+
+.text-color-2 {color: #868D98}
+
+.text-color-3 {color: #B8B8B8}
+
+.text-color-4 {color: #4F545C}
+
+/* FONT SECTION ----------------------------------------*/
+.nunito-sans-regular {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 19px;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.nunito-sans-extrabold {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    font-variation-settings:
+    "wdth" 100,
+    "YTLC" 500;
+}
+
+.outfit-bold {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.hind-vadodara-bold {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 34px;
+}
+
+/* TOP NAV BAR ----------------------------------------*/
+.nav {
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 2;
+    min-height: 70px;
+}
+
+.nav-links {justify-content: space-around;}
+
+.nav-links li {list-style: none;}
+
+.nav-links a {
+    text-decoration: none;
+    padding: 1.2rem 1.2rem;
+}
+
+.contact-button {
+    padding: 0.3rem 0.4rem 0.3rem 0.4rem;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    background: 
+      linear-gradient(to right, #c64900 30%, #005bc3 70%), 
+      linear-gradient(to right, #ff5c00 30%, #0076FF 70%); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+/* BLOCK 1 start ----------------------------------------*/
+.block-1 {
+    height: 730px;
+    width: 100vw;
+    border-top: 70px solid #000000;
+}
+
+.heading-1 {
+    padding-bottom: 25px;
+    width: 580px;
+    font-size: 40px;
+}
+
+.divider {
+    border-top: 2px solid;
+    width: 600px;
+}
+
+.body-text-1 {
+    padding-top: 25px;
+    padding-bottom: 40px;
+    font-size: 20px;
+    width: 580px;
+}
+
+.learn-more-button {
+    font-weight: bolder;
+    gap: 8px;
+    padding: 0.8rem 0.9rem 0.8rem 0.9rem;
+    border: 5px solid transparent;
+    border-radius: 15px;
+    background: 
+      linear-gradient(to right, #c64900 30%, #005bc3 70%), 
+      linear-gradient(to right, #ff5c00 30%, #0076FF 70%); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+/* BLOCK 2 start ----------------------------------------*/
+.block-2 {
+    height: 575px;
+    width: 100vw;
+    gap: 80px;
+
+    border-top: 75px solid rgba(0, 0, 0, 0); 
+    border-bottom: 75px solid rgba(0, 0, 0, 0); 
+    background-clip: padding-box; 
+}
+
+.block-2::before,
+.block-2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.block-2::before {
+    border-top: 2px solid #FF5C00; 
+    top: 805px;
+    z-index: 0;
+}
+
+.block-2::after {
+    border-top: 2px solid #0076FF; 
+    top: 1230px;
+    z-index: 0;
+}
+
+.block-2-image {
+    z-index: 1;
+    width: 572px;
+    height: 575px;
+}
+
+.block-2-text {align-items: start;}
+
+.heading-2 {
+    padding-bottom: 25px;
+    width: 520px;
+    font-size: 36px;
+}
+
+.body-text-2 {width: 530px;}
+
+/* BLOCK 3 start ----------------------------------------*/
+.block-3 {
+    height: 520px;
+    width: 100vw;
+}
+
+.heading-3 {
+    padding-bottom: 35px;
+    width: 450px;
+}
+
+.block-3-icons {gap: 14px;}
+
+.divider-3 {
+    border-left: 1px solid;
+    height: 160px;
+    width: 1px;
+}
+
+/* .icon-3 {} */
+
+.icon-image-3 {height: 80px;}
+
+.icon-text-3 {
+    width: 190px;
+    height: 93px;
+    padding-top: 20px;
+}
+
+.spacer-3-4 {
+    width: 100vw;
+    height: 40px;
+}
+
+/* BLOCK 4 start ----------------------------------------*/
+.block-4 {
+    height: 586px;
+    width: 100vw;
+    gap: 60px;
+
+    border-top: 50px solid rgba(0, 0, 0, 0); 
+    border-bottom: 50px solid rgba(0, 0, 0, 0); 
+    background-clip: padding-box; 
+}
+
+.block-4-text {align-items: start;} 
+
+/* this is the same as heading 2 but do i care? maybe */
+.heading-4 {
+    padding-bottom: 25px;
+    width: 430px;
+}
+
+.body-text-4 {
+    padding-bottom: 30px;
+    width: 510px;
+}
+
+.body-text-4-1 {
+    padding-bottom: 30px;
+    width: 400px;
+}
+
+.block-4-image {
+    width: 576px;
+    height: 586px;
+}
+
+.spacer-4-5 {
+    width: 100vw;
+    height: 120px;
+}
+
+/* BLOCK 5 start ----------------------------------------*/
+.block-5 {
+    height: 599px;
+    width: 100vw;
+    gap: 40px;
+
+    border-top: 50px solid rgba(0, 0, 0, 0); 
+    border-bottom: 50px solid rgba(0, 0, 0, 0); 
+    background-clip: padding-box; 
+}
+
+.block-5-image {
+    width: 631px;
+    height: 599px;
+}
+
+.block-5-text {align-items: flex-start;}
+
+.heading-5 {
+    padding-bottom: 25px;
+    width: 520px;
+}
+
+.body-text-5 {
+    padding-bottom: 30px;
+    width: 540px;
+}
+
+.body-text-5-1 {
+    padding-bottom: 30px;
+    width: 420px;
+}
+
+/* BLOCK 6 start ----------------------------------------*/
+.block-6 {
+    height: 860px;
+    width: 100vw;
+}
+
+.heading-6 {
+    width: 1030px;
+}
+
+.divider-6 {
+    width: 1030px;
+    border-top: 5px solid transparent;
+    padding-bottom: 20px;
+    background: 
+      linear-gradient(to right, #101010, #101010), 
+      linear-gradient(to right, #ff5c00 30%, #0076FF 70%); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.block-6-content {
+    width: 100vw;
+    height: 260px;
+    gap: 25px;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+/* .block-6-person {} */
+
+.icon-6 {
+    width: 120px;
+    height: 120px;
+}
+
+.body-text-6 {
+    width: 300px;
+}
+
+.body-text-6-1 { width: 300px;}
+
+.block-6-quote {
+    width: 600px;
+    gap: 30px;
+}
+
+.block-6-partners {
+    gap: 35px;
+    padding-top: 30px;
+}
+
+/* .partner-6 {} */
+
+.spacer-6-7 {
+    width: 100vw;
+    height: 20px;
+}
+
+/* BLOCK 7 start ----------------------------------------*/
+.block-7 {
+    height: 540px;
+    padding-bottom: 20px;
+    width: 100vw;
+}
+
+.heading-7 {
+    width: 670px;
+    padding-bottom: 50px;
+}
+
+.heading-7-color {
+    background: linear-gradient(to right, #FF5C00 30%, #0076FF 70%); 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.grid-7 {
+    display: grid;
+    grid-template-columns: 280px 280px 280px;
+    column-gap: 80px;
+    row-gap: 60px;
+}
+
+.grid-7-card {
+    justify-content: start;
+}
+
+.heading-7-1 {
+    width: 280px;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.divider-7-1 {
+    width: 260px;
+    border-top: 1px solid;
+}
+
+.body-text-7 {
+    width: 250px;
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 20px;
+    align-self: start;
+}
+
+.spacer-7-8 {
+    width: 100vw;
+    height: 170px;
+}
+
+/* BLOCK 8 start ----------------------------------------*/
+.block-8-top {
+    height: 100px;
+    width: 100vw;
+}
+
+.heading-8-container {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    width: 1080px;
+}
+
+/* .heading-8 {} */
+
+.block-8 {
+    align-items: flex-start;
+    height: 600px;
+    width: 100vw;
+    gap: 30px;
+}
+
+.block-8-card {
+    justify-content: flex-start;
+    width: 300px;
+    height: 380px;
+    border-radius: 20px;
+}
+
+.heading-8-1 {
+    font-size: 26px;
+    width: 250px;
+    padding-top: 20px;
+    padding-bottom: 23px;
+}
+
+.body-text-8 {
+    width: 260px;
+    padding-top: 30px;
+}
+
+.contact-link:hover {
+    color: #0076FF;
+}
+
+/* BLOCK 9 start ----------------------------------------*/
+.block-9 {
+    height: 400px;
+    width: 100vw;
+    gap: 40px;
+    background: linear-gradient(to right, #FF5C00, #0076FF);
+}
+
+.heading-9 {
+    font-size: 34px;
+    width: 720px;
+}
+
+.block-9-button {gap: 16px;}
+
+.end-button {
+    padding: 0.9rem 1rem 0.9rem 1rem;
+    background-color: #161616;
+    border-radius: 15px;
+    font-size: 24px;
+}
+
+/* BLOCK 10 start ----------------------------------------*/
+.block-10 {
+    align-items: end;
+    height: 155px;
+    width: 100vw;
+    gap: 120px;
+    padding-bottom: 30px;
+}
+
+.block-10-logo {align-items: start;}
+
+.block-10-nav {
+    padding-bottom: 70px;
+    gap: 50px;
+}
+
+/* About us BLOCK 1 start ----------------------------------------*/
+.ablock-1 {
+    position: relative;
+    height: 400px;
+    width: 100vw;
+    border-top: 70px solid #000000;
+    background: #0076FF; 
+}
+
+.atitle {
+    width: 860px;
+    z-index: 0;
+    border-radius: 20px;
+    background: rgb(0, 0, 0,.6);
+}
+
+.aheading-1 {
+    padding: 32px 0px 25px 0px;
+    width: 780px;
+    z-index: 1;
+}
+
+.abody-text-1 {
+    padding: 25px 0px 32px 0px;
+    width: 640px;
+    z-index: 1;
+}
+
+.aspacer-1 {
+    content: "";
+    width: 100vw;
+    height: 100px;
+}
+
+.abody-text-2 {
+    position: absolute;
+    width: 805px;
+    bottom: -48px;
+    right: 42vw;
+}
+
+/* About us BLOCK 2 start ----------------------------------------*/
+.ablock-2 {
+    width: 100vw;
+    height: 760px;
+    gap: 36px;
+}
+
+.ablock-2-image {
+    width: 157px;
+    height: 524px;
+}
+
+.ablock-2-text {
+    justify-content: left;
+    width: 570px;
+    gap: 90px;
+}
+
+.aspacer-2-3 {
+    width: 100vw;
+    height: 40px;
+}
+
+/* About us BLOCK 3 start ----------------------------------------*/
+.ablock-3 {
+    width: 100vw;
+    height: 560px;
+    gap: 50px;
+
+    border-top: 40px solid rgba(0, 0, 0, 0); 
+    border-bottom: 40px solid rgba(0, 0, 0, 0); 
+    background-clip: padding-box; 
+}
+
+.ablock-3-text {align-items: start;}
+
+.aheading-3 {
+    padding-bottom: 25px;
+    width: 200px;
+}
+
+.abody-text-3 {
+    padding-bottom: 30px;
+    width: 520px;
+}
+
+.abody-text-3-1 {width: 520px;}
+
+.ablock-3-image {
+    width: 572px;
+    height: 575px;
+}
+
+.aspacer-3-4 {
+    width: 100vw;
+    height: 200px;
+}
+
+/* About us BLOCK 4 start ----------------------------------------*/
+.ablock-4-top {
+    justify-content: flex-start;
+    height: 100px;
+    width: 100vw;
+}
+
+.aheading-4 {
+    width: 440px;
+}
+
+.aheading-4-1 {
+    width: 740px;
+    font-size: 28px;
+    background: linear-gradient(to right, #FF5C00 30%, #0076FF 70%); 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.ablock-4 {
+    width: 100vw;
+    height: 320px;
+}
+
+.acards-4 {gap: 70px;}
+
+.ablock-4-card {
+    height: 280px;
+    justify-content: start;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.adivider-4 {
+    width: 300px;
+    border-top: 2px solid;
+}
+
+.abody-text-4 {
+    font-size: 18px;
+    width: 360px;
+}
+
+.aspacer-4-5 {
+    width: 100vw;
+    height: 180px;
+}
+
+/* About us BLOCK 5 start ----------------------------------------*/
+.ablock_5 {width: 100vw;}
+
+.aheading-5 {
+    width: 170px;
+}
+
+.adivider-5 {
+    width: 180px;
+    border-top: 5px solid transparent;
+    background: 
+      linear-gradient(to right, #101010, #101010), 
+      linear-gradient(to right, #ff5c00 30%, #0076FF 70%); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    padding-bottom: 20px;
+}
+
+.aheading-5-1 {
+    width: 660px;
+    padding-bottom: 30px;
+}
+
+.acards-5 {gap: 37px;}
+
+.ablock-5-card {
+    justify-content: flex-start;
+    width: 347px;
+    height: 420px; 
+    border-radius: 20px;
+}
+
+.aheading-5-2 {
+    padding-top: 12px;
+    font-size: 26px;
+}
+
+.aheading-5-3 {
+    font-size: 18px;
+    padding-bottom: 4px;
+}
+
+.aicons-5 {
+    width: 280px;
+    justify-content: start;
+    gap: 8px;
+}
+
+.abody-text-5 {
+    width: 300px;
+    margin-top: 5px;
+    font-size: 18px;
+    padding-top: 5px;
+}
+
+.aspacer-5-6 {
+    width: 100vw;
+    height: 200px;
+}
+
+/* Contact us BLOCK 1 start ----------------------------------------*/
+.block-1-wrapper {
+    position: relative;
+}
+
+.cblock-1 {
+    height: 809px;
+    width: 100vw;
+    gap: 75px;
+    border-top: 70px solid #000000;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 1) 35%, rgb(0, 0, 0, 0));
+}
+
+.cblock-1-text {align-items: start;}
+
+.cheading-1 {
+    width: 350px;
+    font-size: 38px;
+}
+
+.cheading-1-1 {
+    width: 430px;
+    font-size: 34px;
+    padding-bottom: 130px;
+    background: linear-gradient(to right, #FF5C00, #0076FF); 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.email-1 {
+    font-size: 23px;
+    border-radius: 15px;
+    padding: 0.7rem 0.8rem 0.7rem 0.8rem;
+}
+
+.cspacer-1 {
+    width: auto;
+    height: 12px;
+}
+
+.tip-1 {
+    align-items: start;
+    border-radius: 15px;
+    padding: 1rem 0.8rem 1rem 0.8rem;
+    gap: 8px;
+}
+
+.tip-1-1 {font-size: 26px;}
+
+.form-1 {
+    align-items: start;
+    gap: 6px;
+}
+
+.label-1 {
+    font-size: 24px;
+}
+
+.form-1-fname {
+    width: 195px;
+    height: 46px;
+    border-radius: 15px;
+    border: none;
+    font-size: 19px;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+
+.form-1-lname {
+    width: 195px;
+    height: 46px;
+    border-radius: 15px;
+    border: none;
+    font-size: 19px;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+
+.form-1-email {
+    width: 407px;
+    height: 46px;
+    border-radius: 15px;
+    border: none;
+    font-size: 19px;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+
+.form-1-message {
+    width: 407px;
+    height: 224px;
+    border-radius: 15px;
+    border: none;
+    font-size: 19px;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+
+.carrow {
+    position: absolute;
+    right: 49vw;
+    bottom: 30px
+}
+
+.cspacer-1-2 {
+    width: 100vw;
+    height: 80px;
+}
+
+/* Contact us BLOCK 2 start ----------------------------------------*/
+.cspacer-2 {
+    width: 100vw;
+    height: 40px;
+}
+
+.cblock-2 {
+    background: rgb(30, 30, 30, 0.6);
+}
+
+.cwrapper-2 {
+    padding: 40px 0px 80px 0px;
+}
+
+.cblock-2-text {
+    gap: 6px;
+}
+
+.cheading-2 {
+    font-size: 22px;
+    border-radius: 15px;
+    padding: 0.8rem 0.6rem 0.8rem 0.6rem;
+}
+
+.form_link {
+    background: #101010;
+    text-decoration: none;
+    border: 6px solid #101010;
+    transition: 0.3s;
+}
+
+.form_link:hover {
+    background: linear-gradient(to right, #ff5c00 30%, #0076FF 70%); 
+}
+
+.cspacer-2-3 {
+    width: 100vw;
+    height: 245px;
+}
+
+/* Contact us BLOCK 3 start ----------------------------------------*/
+.cblock-3 {
+    width: 100vw;
+    height: 440px;
+    padding-left: 220px;
+    align-items: start;
+}
+
+.faq-block {
+    align-items: start;
+    gap: 8px;
+}
+
+.cheading-3-1 {
+    font-size: 23px; 
+}
+
+.cheading-3-2 {
+    font-size: 19px;
+}
+
+/* Success BLOCK 1 start ----------------------------------------*/
+.sblock-1 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.sbody {
+    width: 26rem;
+    height: 23rem;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.sheading-1 {
+    width: 320px;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.sicon {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+    border: 5px solid transparent;
+    background: 
+      linear-gradient(to right, #000000, #000000), 
+      linear-gradient(to right, #ff5c00 30%, #0076FF 70%); 
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+.sheading-2 {
+    width: 290px;
+    font-size: 23px;
+    padding: 30px 0px 6px 0px;
+}
+
+.sheading-3 {
+    width: 310px;
+    font-size: 18px;
+}
