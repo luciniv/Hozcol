@@ -131,9 +131,9 @@ body {
 }
 
 .heading-1 {
-    padding-bottom: 25px;
-    width: 580px;
-    font-size: 40px;
+    padding-bottom: 20px;
+    width: 640px;
+    font-size: 44px;
 }
 
 .divider {
@@ -142,7 +142,7 @@ body {
 }
 
 .body-text-1 {
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 40px;
     font-size: 20px;
     width: 580px;
@@ -161,11 +161,17 @@ body {
     background-origin: padding-box, border-box;
 }
 
+.spacer-1 {
+    width: 100vw;
+    height: 60px;
+}
+
 /* BLOCK 2 start ----------------------------------------*/
 .block-2 {
-    height: 575px;
+    max-height: 575px;
+    min-height: 400px;
     width: 100vw;
-    gap: 80px;
+    gap: 5rem;
 
     border-top: 75px solid rgba(0, 0, 0, 0); 
     border-bottom: 75px solid rgba(0, 0, 0, 0); 
@@ -194,19 +200,28 @@ body {
 
 .block-2-image {
     z-index: 1;
-    width: 572px;
-    height: 575px;
+    max-width: 572px;
+    max-height: 575px;
+    min-width: 400px;
+    min-height: 400px;
+    margin-left: 1rem;
 }
 
-.block-2-text {align-items: start;}
+.block-2-text {
+    align-items: start;
+    margin-right: 1rem;
+}
 
 .heading-2 {
-    padding-bottom: 25px;
-    width: 520px;
-    font-size: 36px;
+    padding-bottom: 20px;
+    max-width: 520px;
+    min-width: 360px;
 }
 
-.body-text-2 {width: 530px;}
+.body-text-2 {
+    max-width: 530px;
+    min-width: 360px;
+}
 
 /* BLOCK 3 start ----------------------------------------*/
 .block-3 {
@@ -249,7 +264,6 @@ body {
     gap: 60px;
 
     border-top: 50px solid rgba(0, 0, 0, 0); 
-    border-bottom: 50px solid rgba(0, 0, 0, 0); 
     background-clip: padding-box; 
 }
 
@@ -257,7 +271,7 @@ body {
 
 /* this is the same as heading 2 but do i care? maybe */
 .heading-4 {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     width: 430px;
 }
 
@@ -287,7 +301,6 @@ body {
     width: 100vw;
     gap: 40px;
 
-    border-top: 50px solid rgba(0, 0, 0, 0); 
     border-bottom: 50px solid rgba(0, 0, 0, 0); 
     background-clip: padding-box; 
 }
@@ -300,7 +313,7 @@ body {
 .block-5-text {align-items: flex-start;}
 
 .heading-5 {
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     width: 520px;
 }
 
@@ -926,3 +939,13 @@ body {
     width: 310px;
     font-size: 18px;
 }
+
+@media only screen and (max-width: 1220px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .outfit-bold {
+        font-size: 26px;
+    }
+  }
