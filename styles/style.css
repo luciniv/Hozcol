@@ -1,5 +1,6 @@
 html {
 	scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -112,6 +113,32 @@ body {
     padding: 1.2rem 1.2rem;
 }
 
+.nav-menu {
+    position: relative;
+    display: none;
+    gap: 1.5rem;
+}
+
+.nav-menu a{text-decoration: none;}
+
+.menu-button:hover {cursor: pointer;}
+
+.menu {
+    position: absolute;
+    top: 55px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.menu a {
+    width: 170px;
+    height: 60px;
+}
+
+.menu a:hover {background: #0076FF;}
+
+.vis {display: none;}
+
 .contact-button {
     padding: 0.3rem 0.4rem 0.3rem 0.4rem;
     border: 5px solid transparent;
@@ -163,7 +190,7 @@ body {
 
 .spacer-1 {
     width: 100vw;
-    height: 60px;
+    height: 10px;
 }
 
 /* BLOCK 2 start ----------------------------------------*/
@@ -171,7 +198,7 @@ body {
     max-height: 575px;
     min-height: 400px;
     width: 100vw;
-    gap: 5rem;
+    gap: 80px;
 
     border-top: 75px solid rgba(0, 0, 0, 0); 
     border-bottom: 75px solid rgba(0, 0, 0, 0); 
@@ -202,25 +229,25 @@ body {
     z-index: 1;
     max-width: 572px;
     max-height: 575px;
-    min-width: 400px;
-    min-height: 400px;
-    margin-left: 1rem;
+    min-width: 380px;
+    min-height: 380px;
+    margin-left: 2rem;
 }
 
 .block-2-text {
     align-items: start;
-    margin-right: 1rem;
+    margin-right: 2rem;
 }
 
 .heading-2 {
     padding-bottom: 20px;
     max-width: 520px;
-    min-width: 360px;
+    min-width: 320px;
 }
 
 .body-text-2 {
     max-width: 530px;
-    min-width: 360px;
+    min-width: 320px;
 }
 
 /* BLOCK 3 start ----------------------------------------*/
@@ -234,7 +261,12 @@ body {
     width: 450px;
 }
 
-.block-3-icons {gap: 14px;}
+.block-3-icons {
+    display: grid;
+    grid-template-columns: 200px 1px 200px 1px 200px 1px 200px 1px 200px;
+    column-gap: 1rem;
+    row-gap: 2rem;
+}
 
 .divider-3 {
     border-left: 1px solid;
@@ -944,8 +976,117 @@ body {
     body {
       background-color: lightblue;
     }
-
     .outfit-bold {
         font-size: 26px;
     }
+    .heading-1 {
+        font-size: 44px;
+    }
+    .body-text-1 {
+        font-size: 20px;
+    }
+    .block-2 {
+        gap: 30px;
+    }
+    .divider-3 {
+        display: none;
+    }
+    .block-3-icons {
+        grid-template-columns: 200px 200px 200px 200px;
+    }
   }
+
+@media only screen and (max-width: 910px) { 
+    body {
+        background-color: lightgreen;
+    }
+    .outfit-bold {
+        font-size: 24px;
+    }
+    .nunito-sans-regular {
+        font-size: 18px;
+    }
+    .hind-vadodara-bold {
+        font-size: 30px;
+    }
+    .block-1 {
+        height: 600px;
+    }
+    .heading-1 {
+        padding-top: 2rem;
+        width: 440px;
+        font-size: 30px;
+    }
+    .divider {
+        width: 500px;
+    }
+    .spacer-1 {
+        height: 0px;
+    }
+    .block-2::before {
+        border-top: transparent; 
+    }
+    .block-2::after {
+        border-top: transparent; 
+    }
+    .block-3-icons {
+        grid-template-columns: 200px 200px 200px;
+    }
+}
+
+@media only screen and (max-width: 800px) { 
+    body {
+        background-color: lightcoral;
+      }
+    .outfit-bold {
+        font-size: 24px;
+    }
+    .nunito-sans-regular {
+        font-size: 18px;
+    }
+    .nunito-sans-extrabold {
+        font-size: 17px;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-menu {
+        display: flex;
+    }
+    .block-1 {
+        height: 500px;
+    }
+    .heading-1 {
+        padding-top: 4rem;
+        padding-bottom: 1rem;
+        width: 360px;
+    }
+    .divider {
+        width: 380px;
+    }
+    .body-text-1 {
+        padding-top: 1rem;
+        width: 360px;
+        font-size: 16px;
+    }
+    .block-2 {
+        flex-direction: column;
+        min-height: 800px;
+    }
+    .block-2-image {
+        margin: 0;
+    }
+    .block-2-text {
+        margin-left: 3rem;
+        padding-bottom: 4rem;
+    }
+    .heading-2, .body-text-2 {
+        min-width: 320px;
+    }
+    .block-3 {
+        margin-top: 5rem;
+    }
+    .block-3-icons {
+        grid-template-columns: 200px 200px;
+    }
+}
