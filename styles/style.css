@@ -116,7 +116,7 @@ body {
 .nav-menu {
     position: relative;
     display: none;
-    gap: 1rem;
+    gap: 0.5rem;
 }
 
 .nav-menu a{text-decoration: none;}
@@ -1014,8 +1014,8 @@ body {
     }
     .heading-1 {
         padding-top: 2rem;
-        width: 440px;
-        font-size: 30px;
+        width: 490px;
+        font-size: 34px;
     }
     .divider {
         width: 500px;
@@ -1042,7 +1042,7 @@ body {
         font-size: 24px;
     }
     .nunito-sans-regular {
-        font-size: 18px;
+        font-size: 17px;
     }
     .nunito-sans-extrabold {
         font-size: 17px;
@@ -1059,7 +1059,7 @@ body {
     .heading-1 {
         padding-top: 4rem;
         padding-bottom: 1rem;
-        width: 380px;
+        width: 360px;
     }
     .divider {
         width: 320px;
@@ -1069,19 +1069,19 @@ body {
     }
     .body-text-1 {
         padding-top: 1rem;
-        width: 380px;
+        width: 360px;
         font-size: 16px;
     }
     .block-2 {
         flex-direction: column;
-        min-height: 800px;
+        min-height: 820px;
     }
     .block-2-image {
         margin: 0;
     }
     .block-2-text {
         margin-left: 3rem;
-        padding-bottom: 4rem;
+        padding-bottom: 6rem;
     }
     .heading-2, .body-text-2 {
         min-width: 320px;
@@ -1091,5 +1091,6 @@ body {
     }
     .block-3-icons {
         grid-template-columns: 200px 200px;
+        column-gap: 0.5rem;
     }
 }
