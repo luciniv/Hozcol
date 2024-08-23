@@ -116,7 +116,7 @@ body {
 .nav-menu {
     position: relative;
     display: none;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .nav-menu a{text-decoration: none;}
@@ -972,7 +972,7 @@ body {
     font-size: 18px;
 }
 
-@media only screen and (max-width: 1220px) {
+@media (max-width: 1220px) {
     body {
       background-color: lightblue;
     }
@@ -996,7 +996,7 @@ body {
     }
   }
 
-@media only screen and (max-width: 910px) { 
+@media (max-width: 910px) { 
     body {
         background-color: lightgreen;
     }
@@ -1034,7 +1034,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 800px) { 
+@media (max-width: 800px) { 
     body {
         background-color: lightcoral;
       }
