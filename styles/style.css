@@ -947,11 +947,11 @@ body {
 .cblock-3 {
     width: 100vw;
     height: 440px;
-    padding-left: 18vw;
-    align-items: start;
+    align-items: center;
 }
 
 .faq-block {
+    max-width: 660px;
     align-items: start;
     gap: 8px;
 }
@@ -962,6 +962,7 @@ body {
 
 .cheading-3-2 {
     font-size: 19px;
+    max-width: 660px;
 }
 
 /* Success BLOCK 1 start ----------------------------------------*/
