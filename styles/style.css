@@ -291,7 +291,8 @@ body {
 
 /* BLOCK 4 start ----------------------------------------*/
 .block-4 {
-    height: 586px;
+    max-height: 586px;
+    min-height: 500px;
     width: 100vw;
     gap: 60px;
 
@@ -299,27 +300,40 @@ body {
     background-clip: padding-box; 
 }
 
-.block-4-text {align-items: start;} 
+.block-4-text {
+    align-items: start;
+    margin-left: 2rem;
+} 
 
 /* this is the same as heading 2 but do i care? maybe */
 .heading-4 {
     padding-bottom: 20px;
-    width: 430px;
+    max-width: 430px;
+    min-width: 320px;
 }
 
 .body-text-4 {
     padding-bottom: 30px;
-    width: 510px;
+    max-width: 510px;
+    min-width: 320px;
 }
 
 .body-text-4-1 {
     padding-bottom: 30px;
-    width: 400px;
+    max-width: 400px;
+    min-width: 320px;
 }
 
 .block-4-image {
-    width: 576px;
-    height: 586px;
+    max-width: 576px;
+    max-height: 586px;
+    min-width: 380px;
+    min-height: 384px;
+    margin-right: 2rem;
+}
+
+.block-4-image-2 {
+    display: none;
 }
 
 .spacer-4-5 {
@@ -329,7 +343,8 @@ body {
 
 /* BLOCK 5 start ----------------------------------------*/
 .block-5 {
-    height: 599px;
+    max-height: 599px;
+    min-height: 500px;
     width: 100vw;
     gap: 40px;
 
@@ -338,25 +353,34 @@ body {
 }
 
 .block-5-image {
-    width: 631px;
-    height: 599px;
+    max-width: 631px;
+    max-height: 599px;
+    min-width: 380px;
+    min-height: 370px;
+    margin-left: 2rem;
 }
 
-.block-5-text {align-items: flex-start;}
+.block-5-text {
+    align-items: flex-start;
+    margin-right: 2rem;
+}
 
 .heading-5 {
     padding-bottom: 20px;
-    width: 520px;
+    max-width: 520px;
+    min-width: 320px;
 }
 
 .body-text-5 {
     padding-bottom: 30px;
-    width: 540px;
+    max-width: 540px;
+    min-width: 320px;
 }
 
 .body-text-5-1 {
     padding-bottom: 30px;
-    width: 420px;
+    max-width: 420px;
+    min-width: 320px;
 }
 
 /* BLOCK 6 start ----------------------------------------*/
@@ -366,18 +390,19 @@ body {
 }
 
 .heading-6 {
-    width: 1030px;
+    max-width: 1030px;
 }
 
 .divider-6 {
-    width: 1030px;
+    max-width: 1030px;
+    min-width: 1030px;
     border-top: 5px solid transparent;
-    padding-bottom: 20px;
     background: 
       linear-gradient(to right, #101010, #101010), 
       linear-gradient(to right, #ff5c00 30%, #0076FF 70%); 
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
+    margin-bottom: 20px;
 }
 
 .block-6-content {
@@ -393,17 +418,28 @@ body {
 .icon-6 {
     width: 120px;
     height: 120px;
+    margin-left: 2rem;
 }
 
 .body-text-6 {
     width: 300px;
+    margin-left: 2rem;
 }
 
-.body-text-6-1 { width: 300px;}
+.body-text-6-1 {
+    width: 300px;
+    margin-left: 2rem;
+}
 
 .block-6-quote {
-    width: 600px;
+    max-width: 600px;
+    min-width: 380px;
     gap: 30px;
+    margin-right: 2rem;
+}
+
+.block-6-quote-2 {
+    display: none;
 }
 
 .block-6-partners {
@@ -426,7 +462,7 @@ body {
 }
 
 .heading-7 {
-    width: 670px;
+    max-width: 670px;
     padding-bottom: 50px;
 }
 
@@ -449,7 +485,7 @@ body {
 }
 
 .heading-7-1 {
-    width: 280px;
+    max-width: 280px;
     font-size: 22px;
     padding-bottom: 10px;
 }
@@ -511,10 +547,14 @@ body {
 .body-text-8 {
     width: 260px;
     padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .contact-link:hover {
-    color: #0076FF;
+    background: linear-gradient(to right, #FF5C00, #0076FF); 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 /* BLOCK 9 start ----------------------------------------*/
@@ -527,7 +567,7 @@ body {
 
 .heading-9 {
     font-size: 34px;
-    width: 720px;
+    max-width: 720px;
 }
 
 .block-9-button {gap: 16px;}
@@ -555,6 +595,13 @@ body {
     gap: 50px;
 }
 
+.pa {display: flex;}
+
+.pa-2 {
+    display: none;
+    padding-left: 4px;
+}
+
 /* About us BLOCK 1 start ----------------------------------------*/
 .ablock-1 {
     position: relative;
@@ -564,36 +611,13 @@ body {
     background: #0076FF; 
 }
 
-.atitle {
-    width: 860px;
-    z-index: 0;
-    border-radius: 20px;
-    background: rgb(0, 0, 0,.6);
-}
-
-.aheading-1 {
-    padding: 32px 0px 25px 0px;
-    width: 780px;
-    z-index: 1;
-}
-
-.abody-text-1 {
-    padding: 25px 0px 32px 0px;
-    width: 640px;
-    z-index: 1;
-}
-
-.aspacer-1 {
-    content: "";
-    width: 100vw;
-    height: 100px;
-}
-
 .abody-text-2 {
     position: absolute;
-    width: 805px;
+    max-width: 805px;
     bottom: -48px;
     right: 42vw;
+    padding-right: 2rem;
+    font-size: 160px;
 }
 
 /* About us BLOCK 2 start ----------------------------------------*/
@@ -604,8 +628,8 @@ body {
 }
 
 .ablock-2-image {
-    width: 157px;
-    height: 524px;
+    max-width: 157px;
+    max-height: 524px;
 }
 
 .ablock-2-text {
@@ -621,32 +645,47 @@ body {
 
 /* About us BLOCK 3 start ----------------------------------------*/
 .ablock-3 {
+    max-height: 560px;
+    min-height: 520px;
     width: 100vw;
-    height: 560px;
     gap: 50px;
 
-    border-top: 40px solid rgba(0, 0, 0, 0); 
-    border-bottom: 40px solid rgba(0, 0, 0, 0); 
+    border-top: 50px solid rgba(0, 0, 0, 0); 
+    border-bottom: 50px solid rgba(0, 0, 0, 0); 
     background-clip: padding-box; 
 }
 
-.ablock-3-text {align-items: start;}
+.ablock-3-text {
+    align-items: start;
+    margin-left: 2rem;
+}
 
 .aheading-3 {
     padding-bottom: 25px;
-    width: 200px;
+    max-width: 200px;
 }
 
 .abody-text-3 {
     padding-bottom: 30px;
-    width: 520px;
+    max-width: 520px;
+    min-width: 320px;
 }
 
-.abody-text-3-1 {width: 520px;}
+.abody-text-3-1 {
+    max-width: 520px;
+    min-width: 320px;
+}
 
 .ablock-3-image {
-    width: 572px;
-    height: 575px;
+    max-width: 572px;
+    max-height: 575px;
+    min-width: 380px;
+    min-height: 380px;
+    margin-right: 2rem;
+}
+
+.ablock-3-image-2 {
+    display: none;
 }
 
 .aspacer-3-4 {
@@ -688,11 +727,6 @@ body {
     gap: 20px;
 }
 
-.adivider-4 {
-    width: 300px;
-    border-top: 2px solid;
-}
-
 .abody-text-4 {
     font-size: 18px;
     width: 360px;
@@ -722,7 +756,7 @@ body {
 }
 
 .aheading-5-1 {
-    width: 660px;
+    max-width: 660px;
     padding-bottom: 30px;
 }
 
@@ -913,7 +947,7 @@ body {
 .cblock-3 {
     width: 100vw;
     height: 440px;
-    padding-left: 220px;
+    padding-left: 18vw;
     align-items: start;
 }
 
@@ -988,11 +1022,124 @@ body {
     .block-2 {
         gap: 30px;
     }
+    .heading-3 {
+        padding-top: 5rem;
+    }
     .divider-3 {
         display: none;
     }
+    .block-3 {
+        margin-bottom: 1rem;
+    }
     .block-3-icons {
         grid-template-columns: 200px 200px 200px 200px;
+    }
+    .block-4 {
+        gap: 30px;
+    }
+    .block-5 {
+        gap: 30px;
+    }
+    .block-6 {
+        height: 740px;
+    }
+    .divider-6 {
+        max-width: 760px;
+        min-width: 760px;
+    }
+    .block-7 {
+        height: 500px;
+    }
+    .grid-7 {
+        grid-template-columns: 260px 260px 260px;
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+    .heading-7-1 {
+        max-width: 260px;
+        font-size: 20px;
+    }
+    .divider-7-1 {
+        max-width: 250px;
+    }
+    .body-text-7 {
+        max-width: 240px;
+        font-size: 17px;
+    }
+    .spacer-7-8 {
+        height: 150px;
+    }
+    .block-8-top {
+        height: 80px;
+    }
+    .heading-8 {
+        padding-left: 2rem;
+    }
+    .block-8 {
+        height: 580px;
+        gap: 1rem;
+    }
+    .block-8-card {
+        width: 290px;
+        height: 370px;
+    }
+    .heading-8-1 {
+        width: 250px;
+        padding-top: 20px;
+        padding-bottom: 23px;
+    }
+    .body-text-8 {
+        width: 260px;
+        padding-top: 30px;
+    }
+    .block-9 {
+        height: 380px;
+    }
+    .heading-9 {
+        font-size: 28px;
+        max-width: 620px;
+    }
+    .block-10 {
+        gap: 60px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .block-10-nav {
+        gap: 20px;
+    }
+    .ablock-1 {
+        height: 320px;
+    }
+    .abody-text-2 {
+        bottom: -32px;
+        font-size: 120px;
+    }
+    .ablock-2 {
+        height: 710px;
+    }
+    .aspacer-2-3 {
+        height: 30px;
+    }
+    .ablock-3 {
+        gap: 20px;
+    }
+    .aspacer-3-4 {
+        height: 120px;
+    }
+    .ablock-4-top {
+        height: 85px;
+    }
+    .aheading-4 {
+        font-size: 30px;
+    }
+    .acards-4 {
+        gap: 40px;
+    }
+    .aspacer-4-5 {
+        height: 140px;
+    }
+    .acards-5 {
+        gap: 1rem;
     }
   }
 
@@ -1029,17 +1176,129 @@ body {
     .block-2::after {
         border-top: transparent; 
     }
+    .heading-3 {
+        padding-top: 1rem;
+    }
     .block-3-icons {
         grid-template-columns: 200px 200px 200px;
+    }
+    .spacer-4-5 {
+        height: 100px;
+    }
+    .block-6 {
+        height: 640px;
+    }
+    .divider-6 {
+        max-width: 700px;
+        min-width: 700px;
+    }
+    .block-7 {
+        height: 580px;
+    }
+    .heading-7 {
+        padding-bottom: 40px;
+    }
+    .grid-7 {
+        grid-template-columns: 260px 260px;
+    }
+    .heading-7-1 {
+        font-size: 18px;
+    }
+    .body-text-7 {
+        font-size: 17px;
+    }
+    .spacer-7-8 {
+        height: 120px;
+    }
+    .block-8 {
+        height: 540px;
+        gap: 0.8rem;
+    }
+    .block-8-card {
+        width: 260px;
+        height: 360px;
+    }
+    .heading-8-1 {
+        font-size: 22px;
+    }
+    .body-text-8 {
+        width: 230px;
+    }
+    .block-9 {
+        height: 360px;
+    }
+    .heading-9 {
+        max-width: 520px;
+    }
+    .block-10 {
+        gap: 40px;
+    }
+    .block-10-nav {
+        gap: 20px;
+    }
+    .ablock-1 {
+        height: 280px;
+    }
+    .abody-text-2 {
+        bottom: -26px;
+        font-size: 100px;
+    }
+    .ablock-2 {
+        height: 660px;
+    }
+    .ablock-2-image {
+        margin-left: 2rem;
+        min-width: 120px;
+        min-height: 424px;
+    }
+    .ablock-2-text {
+        width: 520px;
+        margin-right: 2rem;
+    }
+    .aspacer-2-3 {
+        height: 0px;
+    }
+    .aspacer-3-4 {
+        height: 100px;
+    }
+    .ablock-4 {
+        height: 310px;
+    }
+    .ablock-4-top {
+        height: 70px;
+    }
+    .abody-text-4 {
+        font-size: 17px;
+        width: 340px;
+    }
+    .aspacer-4-5 {
+        height: 130px;
+    }
+    .ablock-5-card {
+        width: 330px;
+        height: 410px; 
+    }
+    .aheading-5-2 {
+        font-size: 24px;
+    }
+    .aheading-5-3 {
+        font-size: 17px;
+    }
+    .aicons-5 {
+        width: 260px;
+    }
+    .abody-text-5 {
+        width: 280px;
+        font-size: 17px;
+    }
+    .aspacer-5-6 {
+        height: 160px;
     }
 }
 
 @media (max-width: 800px) { 
     body {
         background-color: lightcoral;
-      }
-    .outfit-bold {
-        font-size: 24px;
     }
     .nunito-sans-regular {
         font-size: 17px;
@@ -1060,6 +1319,7 @@ body {
         padding-top: 4rem;
         padding-bottom: 1rem;
         width: 360px;
+        font-size: 24px;
     }
     .divider {
         width: 320px;
@@ -1081,16 +1341,233 @@ body {
     }
     .block-2-text {
         margin-left: 3rem;
-        padding-bottom: 6rem;
-    }
-    .heading-2, .body-text-2 {
-        min-width: 320px;
+        margin-bottom: 6rem;
     }
     .block-3 {
         margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .heading-3 {
+        padding-top: 2rem;
     }
     .block-3-icons {
-        grid-template-columns: 200px 200px;
-        column-gap: 0.5rem;
+        grid-template-columns: 170px 170px;
+        column-gap: 1rem;
+    }
+    .icon-text-3 {
+        width: 160px;
+    }
+    .block-4 {
+        flex-direction: column;
+        min-height: 800px;
+    }
+    .block-4-image {
+        display: none;
+    }
+    .block-4-image-2 {
+        max-width: 576px;
+        max-height: 586px;
+        min-width: 380px;
+        min-height: 384px;
+        display: flex;
+    }
+    .block-4-text {
+        margin-left: 3rem;
+    }
+    .spacer-4-5 {
+        height: 120px;
+    }
+    .block-5 {
+        flex-direction: column;
+        min-height: 800px;
+    }
+    .block-5-text {
+        margin-left: 3rem;
+        margin-bottom: 6rem;
+    }
+    .heading-6 {
+        padding-top: 14rem;
+        max-width: 690px;
+        min-width: 320px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .divider-6 {
+        min-width: 340px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .block-6-content {
+        flex-direction: column;
+        height: 560px;
+    }
+    .block-6-quote {
+        display: none;
+    }
+    .block-6-quote-2 {
+        display: flex;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 17px;
+    }
+    .block-6-partners {
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: 140px 140px;
+        column-gap: 0.2rem;
+        row-gap: 1rem;
+    }
+    .spacer-6-7 {
+        height: 280px;
+    }
+    .heading-7 {
+        max-width: 500px;
+        min-width: 360px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-bottom: 30px;
+    }
+    .block-7 {
+        height: 1000px;
+    }
+    .grid-7 {
+        grid-template-columns: 260px;
+        column-gap: 0rem;
+        row-gap: 2.5rem;
+    }
+    .heading-7-1 {
+        font-size: 18px;
+        padding-bottom: 0.4rem;
+    }
+    .body-text-7 {
+        font-size: 17px;
+        padding-top: 0.4rem;
+    }
+    .spacer-7-8 {
+        height: 100px;
+    }
+    .block-8 {
+        flex-direction: column;
+        align-items: center;
+        height: 1100px;
+        gap: 0.4rem;
+        margin-bottom: 6rem;
+    }
+    .block-8-card {
+        width: 270px;
+    }
+    .heading-8-1 {
+        font-size: 20px;
+        padding-top: 1rem;
+    }
+    .body-text-8 {
+        width: 240px;
+    }
+    .heading-9 {
+        max-width: 520px;
+        min-width: 380px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    .block-10 {
+        gap: 40px;
+    }
+    .block-10-nav {
+        align-items: end;
+        flex-direction: column;
+        gap: 8px;
+        padding-bottom: 0;
+    }
+    .pa {
+        display: none;
+    }
+    .pa-2 {
+        display: flex;
+        padding-top: 0px;
+    }
+    .thc {
+        display: none;
+    }
+    .ablock-1 {
+        height: 220px;
+    }
+    .abody-text-2 {
+        max-width: 360px;
+        bottom: -22px;
+        font-size: 80px;
+        right: 28vw;
+    }
+    .ablock-2 {
+        height: 700px;
+        gap: 1.5rem;
+    }
+    .ablock-2-image {
+        margin-left: 0rem;
+        max-width: 110px;
+        max-height: 400px;
+    }
+    .ablock-2-text {
+        width: 250px;
+        gap: 2rem;
+        margin-right: 0rem;
+    }
+    .text2 {
+        font-size: 16px;
+    }
+    .ablock-3 {
+        flex-direction: column;
+        min-height: 860px;
+    }
+    .ablock-3-image-2 {
+        display: flex;
+        max-width: 572px;
+        max-height: 575px;
+        min-width: 380px;
+        min-height: 380px;
+    }
+    .ablock-3-image {
+        display: none;
+    }
+    .ablock-3-text {
+        margin-left: 3rem;
+        margin-bottom: 6rem;
+    }
+    .aspacer-3-4 {
+        height: 50px;
+    }
+    .ablock-4-top {
+        height: 100px;
+    }
+    .aheading-4-1 {
+        width: 380px;
+    }
+    .ablock-4 {
+        height: 580px;
+    }
+    .acards-4 {
+        gap: 0px;
+        flex-direction: column;
+    }
+    .ablock-4-card {
+        margin-top: 0px;
+    }
+    #top-card {
+        margin-top: 80px;
+    }
+    .aspacer-4-5 {
+        height: 90px;
+    }
+    .aheading-5-1 {
+        min-width: 380px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-bottom: 1rem;
+    }
+    .acards-5 {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .aspacer-5-6 {
+        height: 120px;
     }
 }
