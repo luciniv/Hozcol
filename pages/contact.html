@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="bg-color" lang="en-US">
+<html class="nav-color" lang="en-US">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link href="../styles/style.css" rel="stylesheet" />
-    <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/Cutout H Logo.png">
   </head>
 
   <div id="wrapper">
@@ -54,23 +54,29 @@
                 <input type="hidden" name="from_name" value="Contact us">
                 <input type="hidden" name="subject" value="New Submission from www.hozcol.org"/>
                 <input type="checkbox" name="botcheck" id="" style="display: none;"/>
-                <label class="outfit-bold text-color label-1" for="fname">Your Name</label>
-                <div class="fc" style="gap: 16px;">
-                    <input class="form-1-fname nunito-sans-extrabold white" type="text" id="fname" name="fname" placeholder="First">
-                    <input class="form-1-lname nunito-sans-extrabold white" type="text" id="lname" name="lname" placeholder="Last">
+                <label class="outfit-bold text-color label-1" for="fname">Your Name / Alias</label>
+                <div class="fc form_name">
+                    <input class="form-1-fname nunito-sans-extrabold white" type="text" id="fname" name="fname" maxlength="100" placeholder="First">
+                    <input class="form-1-lname nunito-sans-extrabold white" type="text" id="lname" name="lname" maxlength="100" placeholder="Last">
                 </div>
                 <label class="outfit-bold text-color label-1" style="padding-top: 16px;" for="email">Email</label>
-                <input class="form-1-email nunito-sans-extrabold white" type="email" id="email" name="email">
+                <input class="form-1-email nunito-sans-extrabold white" type="email" id="email" name="email" maxlength="100">
                 <label class="outfit-bold text-color label-1" style="padding-top: 16px;" for="message">Message</label>
                 <textarea class="form-1-message nunito-sans-extrabold white" id="message" name="message"></textarea>
                 <!-- Honeypot Spam Protection -->
                 <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 <!-- Custom Confirmation / Success Page -->
                 <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-                <input type="hidden" name="redirect" value="https://hozcol.org">
+                <input type="hidden" name="redirect" value="https://hozcol.org/success">
                 <div style="width: auto; height: 16px;"></div>
-                <button class="learn-more-button nunito-sans-extrabold text-color" style="padding: 0.7rem 1.1rem 0.7rem 1.1rem;"type="submit">Submit</button>
+                <button id="submit" class="contact-button nunito-sans-extrabold text-color" type="submit">Submit</button>
             </form>
+            <a id="tip-2-link" href="https://forms.gle/CMH37GNFhTimCZke6" target="_blank" rel="noopener noreferrer">
+                <div class="fcol bg-color tip-2">
+                    <span class="outfit-bold text-color tl tip-1-1">Looking to kickstart the process?</span>
+                    <span class="nunito-sans-regular text-color tl tip-1-2">Click here to open our Community Owner Intake Form</span>
+                </div>
+            </a>
         </div>
         <img src="../assets/arrow_trail.svg" class="carrow"/>
         <div class="cspacer-1-2"></div>
@@ -78,32 +84,44 @@
         <div class="fcol cblock-2">
             <div class="cspacer-2"></div>
             <div class="fc cblock-2-text">
-                <div class="outfit-bold text-color bg-color tc cheading-2" style="border: 6px solid #101010;">Feel free to complete the form below</div>
+                <div class="form-below outfit-bold text-color bg-color tc cheading-2">Feel free to complete the form below</div>
                 <div class="outfit-bold text-color tc cheading-2" style="padding: 1rem 0.8rem 1rem 0.8rem;">OR</div>
-                <a class="form_link outfit-bold text-color bg-color tc cheading-2" href="https://forms.gle/CMH37GNFhTimCZke6" target="_blank" rel="noopener noreferrer">Open it in a new tab</a>
+                <a class="form-link outfit-bold text-color tc cheading-2" href="https://forms.gle/CMH37GNFhTimCZke6" target="_blank" rel="noopener noreferrer">Open it in a new tab</a>
             </div>
             <div class="cwrapper-2">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfgXHSFPhxDtZqa6PZUop07I9puI_4ccBU8ddRubdyezgM90g/viewform?embedded=true" width="640" height="700" frameborder="0" marginheight="0" marginwidth="0" style="background: #a6cfff; border-radius: 20px; padding: 18px 0px 18px 0px;">Loading…</iframe>
+                <iframe class="gform" src="https://docs.google.com/forms/d/e/1FAIpQLSfgXHSFPhxDtZqa6PZUop07I9puI_4ccBU8ddRubdyezgM90g/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
         <div class="cspacer-2-3"></div>
         <div class="fcol cblock-3 block-color">
-            <div class="fcol faq-block" style="padding-bottom: 40px;">
-                <span class="outfit-bold text-color tl cheading-3-1">When should I expect a response by?</span>
-                <div class="fc" style="gap: 8px; padding-left: 10px;">
-                    <img src="../assets/faq-arrow.svg" width="18" height="18"/><span class="nunito-sans-regular text-color-3 tl cheading-3-2">We’ll get back to you by email in 1-2 business days.</span>
+            <div class="faq-container">
+                <div class="outfit-bold text-color tl faq-heading">FAQ</div>
+                <div class="fcol faq-block" style="padding-bottom: 40px;">
+                    <div class="fc faq-title">
+                        <img class="faq-arrow" src="../assets/button-arrow.svg" width="18" height="18"/><span class="outfit-bold text-color tl cheading-3-1">When should I expect a response by?</span>
+                    </div>
+                    <div class="cdivider-3"></div>
+                    <div class="faq-color faq-panel">
+                        <div class="nunito-sans-regular text-color tl cbody-text-3">If you've provided us with an email, we'll get back to you in 1-2 business days. We're also happy to chat via Discord.</div>
+                    </div>
                 </div>
-            </div>
-            <div class="fcol faq-block" style="padding-bottom: 40px;">
-                <span class="outfit-bold text-color tl cheading-3-1">What can I contact your team for?</span>
-                <div class="fc" style="gap: 8px; padding-left: 10px;">
-                    <img src="../assets/faq-arrow.svg" width="18" height="18"/><span class="nunito-sans-regular text-color-3 tl cheading-3-2">Anything and everything! We’re always happy to chat.</span>
+                <div class="fcol faq-block" style="padding-bottom: 40px;">
+                    <div class="fc faq-title">
+                        <img class="faq-arrow" src="../assets/button-arrow.svg" width="18" height="18"/><span class="outfit-bold text-color tl cheading-3-1">What can I contact your team for?</span>
+                    </div>
+                    <div class="cdivider-3"></div>
+                    <div class="faq-color faq-panel">
+                        <div class="nunito-sans-regular text-color tl cbody-text-3">Anything and everything! We specialize in community management and moderation, though we're always open to answer any questions you may have.</div>
+                    </div>
                 </div>
-            </div>
-            <div class="fcol faq-block">
-                <span class="outfit-bold text-color tl cheading-3-1">What’s the purpose of the Community Owner Intake Form?</span>
-                <div class="fc" style="gap: 8px; padding-left: 10px; align-items: start;">
-                    <img src="../assets/faq-arrow.svg" width="18" height="18" style="margin-top: 4px;"/><span class="nunito-sans-regular text-color-3 tl cheading-3-2" style="width: 800px">We provide it as an option for community owners to expedite our support process. If you choose to work with us, we'll send you this form to complete. Submitting it early is the best way to get a step ahead in helping your community!</span>
+                <div class="fcol faq-block">
+                    <div class="fc faq-title">
+                        <img class="faq-arrow" src="../assets/button-arrow.svg" width="18" height="18"/><span class="outfit-bold text-color tl cheading-3-1">What’s the purpose of the Community Owner Intake Form?</span>
+                    </div>
+                    <div class="cdivider-3"></div>
+                    <div class="faq-color faq-panel">
+                        <div class="nunito-sans-regular text-color tl cbody-text-3">We provide it as an option for community owners to expedite our support process. If you choose to work with us, we'll send you this form to complete. Submitting it early is the best way to get a step ahead in helping your community!</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -117,12 +135,12 @@
             </div>
             <div class="fc block-10-nav">
                 <a class="nunito-sans-extrabold text-color" href="about.html" style="text-decoration: none;">About us</a>
-                <a class="nunito-sans-extrabold text-color" href="contact.html" style="text-decoration: none;">Consulting</a>
+                <a class="nunito-sans-extrabold text-color" href="success.html" style="text-decoration: none;">Consulting</a>
                 <a class="nunito-sans-extrabold text-color" href="../index.html#process" style="text-decoration: none;">Our Process</a>
             </div>
             <span class="nunito-sans-regular pa text-color">Made with ❤️ in PA</span>
         </div>
-        <script src="../scripts/main.js"></script>
+        <script src="../scripts/contact.js"></script>
     </body>
   </div>
 </html>
