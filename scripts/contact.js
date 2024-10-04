@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
         for(var i = 0; i < elements.length; i++){
         elements[i].onclick = function(){
 
-            var divider = this.nextElementSibling;
+            const divider = this.nextElementSibling;
 
-            var content = divider.nextElementSibling;
+            const content = divider.nextElementSibling;
             if (content.style.maxHeight) {
                 content.style.maxHeight = null;} 
             else {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             else {
                 divider.style.display = "none";}
 
-            var arrow = this.getElementsByClassName("faq-arrow")[0];
+            const arrow = this.getElementsByClassName("faq-arrow")[0];
             arrow.classList.toggle("rotate");
         };
     }}

@@ -45,7 +45,7 @@ body {
 
 .block-color {background: #1F1F1F}
 
-.faq-color {background: #333333;}
+.faq-color {background: #2e2e2e;}
 
 .white {background: #ffffff;}
 
@@ -103,9 +103,11 @@ body {
     width: 100vw;
     z-index: 10;
     min-height: 70px; 
-    background: #000000e8;
+    background: #000000e3;
     box-shadow: 0 4px 4px #000000e8;
 }
+
+.heading { font-size: 30px; }
 
 .nav-links {justify-content: space-around;}
 
@@ -184,17 +186,10 @@ body {
     -webkit-user-select: none;
 }
 
-/* #bg {
-    position: absolute;
-    width: 100vw;
-    height: 660px;
-    background: #a3a3a3;
-} */
-
 #follower {
     position: absolute;
     transform:translate(-50%,-50%);
-    z-index: 0;
+    z-index: 1;
     cursor: none;
     transition: opacity 0.2s ease;
 }
@@ -274,6 +269,18 @@ body {
     pointer-events: none !important;
   }
 
+#wave-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 800px;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 4s ease;
+    pointer-events: none;
+}
+
 .divider {
     border-top: 2px solid;
     width: 600px;
@@ -290,7 +297,7 @@ body {
     pointer-events: none;
 }
 
-.button-shell {z-index: 1;}
+.button-shell {z-index: 2;}
 
 .learn-more-button-first {
     font-weight: bolder;
@@ -343,7 +350,7 @@ body {
     );
     top: 0;
     left: -100px;
-    animation: shine 8s infinite linear;
+    animation: shine 6s infinite linear;
 }
 
 .learn-more-button:hover {
@@ -356,7 +363,7 @@ body {
 
 @keyframes shine {
     0% {left: -100px;}
-    8% {left: 100%}
+    12% {left: 100%}
     100% {left: 100%}
 }
 
@@ -759,9 +766,7 @@ body {
 }
 
 .block-9-button {
-    gap: 14px;
-    transition: gap 0.2s ease;
-    animation: yay_inf 2s infinite;
+    gap: 12px;
 }
 
 .end-button {
@@ -780,18 +785,6 @@ body {
     transform: scale(1.1);
     color: #ffffff;
     box-shadow: 0 8px 8px #ffffffa9;
-}
-
-@keyframes yay_inf {
-    0% {
-        gap: 14px;
-    }
-    50% {
-        gap: 28px;
-    }
-    100% {
-        gap: 14px;
-    }
 }
 
 /* BLOCK 10 start ----------------------------------------*/
@@ -820,7 +813,7 @@ body {
 /* About us BLOCK 1 start ----------------------------------------*/
 .ablock-1 {
     position: relative;
-    height: 360px;
+    height: 320px;
     width: 100vw;
     border-top: 70px solid #000000;
     background: #0076FF; 
@@ -985,12 +978,16 @@ body {
     padding-bottom: 30px;
 }
 
-.acards-5 {gap: 37px;}
+.acards-5 {
+    align-items: flex-start;
+    gap: 37px;
+}
 
 .ablock-5-card {
+    position: relative;
     justify-content: flex-start;
-    width: 347px;
-    height: 420px; 
+    width: 340px;
+    padding-bottom: 28px;
     border-radius: 20px;
 }
 
@@ -1013,16 +1010,61 @@ body {
 }
 
 .aicons-5 {
-    width: 280px;
-    justify-content: start;
     gap: 8px;
 }
 
-.abody-text-5 {
-    width: 300px;
+.abody-heading {
+    gap: 180px;
+    align-items: flex-end;
+    padding-bottom: 10px;
+}
+
+.about-title {
+    font-size: 19px;
+}
+
+.card-button {
+    position: absolute;
+    bottom: 10px;
+    z-index: 2;
+    padding: 0.2rem 0.6rem;
+    border: 2px solid #FF5C00;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#cardbutton2 {
+    border: 2px solid #0076FF;
+}
+
+.about-panel {
+    display: block;
+    position: relative;
+    max-height: 170px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: max-height 0.3s ease;
+}
+
+.abody-text-5-panel {
+    width: 310px;
+    z-index: 0;
     margin-top: 5px;
-    font-size: 18px;
-    padding-top: 5px;
+    font-size: 17px;
+    padding: 0.3rem 0.6rem;
+}
+
+.about-list {
+    list-style: none;
+}
+
+.card-fade {
+    position: absolute;
+    z-index: 1;
+    width: 310px;
+    height: 90px;
+    bottom: 0;
+    background: linear-gradient(to top, #2e2e2eb8 10%, #2e2e2e00);
 }
 
 .aspacer-5-6 {
@@ -1277,7 +1319,7 @@ body {
 .cdivider-3 {
     display: block;
     width: 710px;
-    border-top: 2px solid #333333;
+    border-top: 2px solid #2e2e2e;
 }
 
 .faq-panel {
@@ -1289,7 +1331,7 @@ body {
 }
 
 .cbody-text-3 {
-    padding: 1.2rem;
+    padding: 0.8rem 1.1rem;
 }
 
 /* Success BLOCK 1 start ----------------------------------------*/
@@ -1436,7 +1478,7 @@ body {
         gap: 20px;
     }
     .ablock-1 {
-        height: 320px;
+        height: 280px;
     }
     .abody-text-2 {
         bottom: -32px;
@@ -1623,7 +1665,7 @@ body {
         gap: 20px;
     }
     .ablock-1 {
-        height: 280px;
+        height: 240px;
     }
     .abody-text-2 {
         bottom: -26px;
@@ -1662,7 +1704,6 @@ body {
     }
     .ablock-5-card {
         width: 330px;
-        height: 410px; 
     }
     .aheading-5-2 {
         font-size: 24px;
