@@ -95,6 +95,11 @@ body {
     font-size: 34px;
 }
 
+/* RE-USED ITEMS ----------------------------------------*/
+.grow { transition: all 0.2s ease; }
+
+.grow:hover { transform: scale(1.1); }
+
 /* TOP NAV BAR ----------------------------------------*/
 .nav {
     justify-content: space-around;
@@ -297,7 +302,7 @@ body {
     pointer-events: none;
 }
 
-.button-shell {z-index: 2;}
+#button-shell {z-index: 2;}
 
 .learn-more-button-first {
     font-weight: bolder;
@@ -571,8 +576,8 @@ body {
 }
 
 .divider-6 {
-    max-width: 1030px;
-    min-width: 1030px;
+    max-width: 900px;
+    min-width: 900px;
     border-top: 5px solid transparent;
     background: 
       linear-gradient(to right, #101010, #101010), 
@@ -991,13 +996,9 @@ body {
     border-radius: 20px;
 }
 
-#acard1 {
-    box-shadow: 0px 8px 10px #5a2100;
-}
+#acard1 { box-shadow: 0px 8px 10px #5a2100; }
 
-#acard2 {
-    box-shadow: 0px 8px 10px #002f66;
-}
+#acard2 { box-shadow: 0px 8px 10px #002f66; }
 
 .aheading-5-2 {
     padding-top: 12px;
@@ -1009,9 +1010,7 @@ body {
     padding-bottom: 4px;
 }
 
-.aicons-5 {
-    gap: 8px;
-}
+.aicons-5 { gap: 8px; }
 
 .abody-heading {
     gap: 180px;
@@ -1044,6 +1043,7 @@ body {
     overflow: hidden;
     border-radius: 15px;
     transition: max-height 0.3s ease;
+    padding-bottom: 6px;
 }
 
 .abody-text-5-panel {
@@ -1055,7 +1055,22 @@ body {
 }
 
 .about-list {
-    list-style: none;
+    justify-content: start;
+    align-items: start;
+    padding-left: 10px;
+}
+
+.about-list ul {
+    width: 260px;
+    padding-top: 8px;
+    list-style-type: none;
+    text-align: left;
+}
+
+.about-list li::before {
+    content: "-";
+    margin-right: 1em;
+    opacity: .5;
 }
 
 .card-fade {
@@ -1064,7 +1079,7 @@ body {
     width: 310px;
     height: 90px;
     bottom: 0;
-    background: linear-gradient(to top, #2e2e2eb8 10%, #2e2e2e00);
+    background: linear-gradient(to top, #2e2e2e97 10%, #2e2e2e00);
 }
 
 .aspacer-5-6 {
@@ -1102,8 +1117,6 @@ body {
     -webkit-background-clip: text;
 }
 
-
-
 #submit {
     padding: 0.7rem 1.1rem 0.7rem 1.1rem; 
     border: 5px solid #0076FF;
@@ -1129,11 +1142,22 @@ body {
     }
 }
 
-.email-1 {
-    font-size: 23px;
-    border-radius: 15px;
-    padding: 0.7rem 0.8rem 0.7rem 0.8rem;
-    box-shadow: 0px 8px 10px #00000055;
+#mailto {
+    text-decoration: none;
+}
+
+#email-link {
+    background: linear-gradient(to right, #FF5C00, #0076FF); 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+#email-link:hover {
+    background: linear-gradient(to right, #ffffff, #ffffff); 
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .cspacer-1 {
@@ -1246,26 +1270,6 @@ body {
     text-decoration: none;
     border: 6px solid #101010;
     box-shadow: 0px 8px 10px #00000055;
-    transition: all 0.1s ease;
-}
-
-.form-link:hover {
-    animation: color_shift_wide 1.6s infinite linear;
-}
-
-@keyframes color_shift_wide {
-    0% {
-        border: 6px solid #0076FF;
-        box-shadow: 0 8px 10px #002f66;
-    }
-    50% {
-        border: 6px solid #FF5C00;
-        box-shadow: 0 8px 10px #5a2100;
-    }
-    100% {
-        border: 6px solid #0076FF;
-        box-shadow: 0 8px 10px #002f66;
-    }
 }
 
 .gform {
@@ -1414,8 +1418,8 @@ body {
         height: 740px;
     }
     .divider-6 {
-        max-width: 760px;
-        min-width: 760px;
+        max-width: 660px;
+        min-width: 660px;
     }
     .block-7 {
         height: 500px;
@@ -1522,9 +1526,6 @@ body {
         font-size: 30px;
         padding-bottom: 100px;
     }
-    .email-1 {
-        font-size: 19px;
-    }
     .form-1 {
         gap: 4px;
     }
@@ -1617,8 +1618,8 @@ body {
         height: 640px;
     }
     .divider-6 {
-        max-width: 700px;
-        min-width: 700px;
+        max-width: 600px;
+        min-width: 600px;
     }
     .block-7 {
         height: 580px;
@@ -1733,9 +1734,6 @@ body {
         font-size: 26px;
         width: 340px;
         padding-bottom: 70px;
-    }
-    .email-1 {
-        font-size: 18px;
     }
     .tip-1-1 {
         width: 270px;
@@ -1890,15 +1888,14 @@ body {
     }
     .heading-6 {
         padding-top: 14rem;
+        padding-bottom: 10px;
         max-width: 690px;
         min-width: 320px;
         margin-left: 2rem;
         margin-right: 2rem;
     }
     .divider-6 {
-        min-width: 340px;
-        margin-left: 2rem;
-        margin-right: 2rem;
+        display: none;
     }
     .block-6-content {
         flex-direction: column;
@@ -2089,9 +2086,6 @@ body {
     }
     .tip-1 {
         display: none;
-    }
-    .email-1 {
-        font-size: 17px;
     }
     .tip-1-1 {
         font-size: 22px;

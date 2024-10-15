@@ -11,12 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const canvas = document.getElementById("wave-canvas");
     const ctx = canvas.getContext("2d");
-
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-
     let waves = [];
-
     // Function to create random waves near the bottom
     function createWaves() {
         waves.push({
@@ -56,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function() {
             filled: false
         });
     }
-
     function drawWaves() {
         ctx.clearRect(0, 0, canvas.width, canvas.height); 
         for (const wave of waves) {
@@ -85,12 +81,10 @@ document.addEventListener('DOMContentLoaded', function() {
             wave.phase += wave.speed; 
         }
     }
-
     function animate() {
         drawWaves();
         requestAnimationFrame(animate);
     }
-
     window.addEventListener('resize', resizeCanvas);
     document.addEventListener('fullscreenchange', resizeCanvas);
     function resizeCanvas() {
@@ -99,12 +93,9 @@ document.addEventListener('DOMContentLoaded', function() {
         waves = [];
         createWaves();
     }
-
     createWaves();
     animate();
-
     setTimeout(() => { canvas.style.opacity = 1; }, 500);
-
 
     const follower = document.getElementById("follower");
     let load = false;

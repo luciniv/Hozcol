@@ -20,14 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 this.style.bottom = "-18px"; }
 
             const fade = content.firstElementChild.nextElementSibling;
-            /* toggle between hiding and showing divider */
+            /* toggle between hiding and showing the fade */
             if (fade.style.display == "none") {
                 fade.style.display = "block"; }
             else {
                 fade.style.display = "none"; }
-
-            // var arrow = this.getElementsByClassName("faq-arrow")[0];
-            // arrow.classList.toggle("rotate");
         };
     }}
     aboutInteraction();
