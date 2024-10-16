@@ -204,7 +204,7 @@ body {
 .heading-1 {
     width: 640px;
     font-size: 40px;
-    z-index: 1;
+    z-index: 2;
     pointer-events: none;
 }
 
@@ -212,7 +212,7 @@ body {
     position: relative;
     margin-right: 170px;
     font-size: 40px;
-    z-index: 1;
+    z-index: 2;
     padding-bottom: 20px;
     pointer-events: none;
 }
@@ -231,7 +231,7 @@ body {
 .slidingVertical{
 	display: inline;
 	text-indent: 6px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .slidingVertical span{
@@ -289,7 +289,7 @@ body {
 .divider {
     border-top: 2px solid;
     width: 600px;
-    z-index: 1;
+    z-index: 2;
     pointer-events: none;
 }
 
@@ -298,7 +298,7 @@ body {
     padding-bottom: 40px;
     font-size: 20px;
     width: 580px;
-    z-index: 1;
+    z-index: 2;
     pointer-events: none;
 }
 
@@ -777,18 +777,37 @@ body {
 .end-button {
     padding: 0.9rem 1rem 0.9rem 1rem;
     background-color: #161616;
+    color: rgb(150, 108, 147);
     border-radius: 15px;
     box-shadow: 0 6px 8px #00000075;
     font-size: 24px;
-    transition: transform 0.3s ease,
+    transition: transform 1s ease,
                 color 0.2s ease,
                 box-shadow 0.2s ease;
+    animation: dance 2s infinite;
 }
 
 .end-button:hover {
-    transform: scale(1.1);
     color: #ffffff;
     box-shadow: 0 8px 8px #ffffffa9;
+}
+
+@keyframes dance {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(-4deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(4deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 /* BLOCK 10 start ----------------------------------------*/
