@@ -411,8 +411,8 @@ body {
     z-index: 2;
     max-width: 572px;
     max-height: 575px;
-    min-width: 380px;
-    min-height: 380px;
+    min-width: 340px;
+    min-height: 340px;
     margin-left: 2rem;
 }
 
@@ -509,8 +509,8 @@ body {
 .block-4-image {
     max-width: 576px;
     max-height: 586px;
-    min-width: 380px;
-    min-height: 384px;
+    min-width: 340px;
+    min-height: 344px;
     margin-right: 2rem;
 }
 
@@ -537,8 +537,8 @@ body {
 .block-5-image {
     max-width: 631px;
     max-height: 599px;
-    min-width: 380px;
-    min-height: 370px;
+    min-width: 340px;
+    min-height: 330px;
     margin-left: 2rem;
 }
 
@@ -615,7 +615,7 @@ body {
 
 .block-6-quote {
     max-width: 600px;
-    min-width: 380px;
+    min-width: 340px;
     gap: 30px;
     margin-right: 2rem;
 }
@@ -776,7 +776,6 @@ body {
 
 .end-button {
     padding: 0.9rem 1rem 0.9rem 1rem;
-    color: rgb(150, 108, 147);
     background-color: #161616;
     border-radius: 15px;
     box-shadow: 0 6px 8px #00000075;
@@ -857,10 +856,15 @@ body {
     max-height: 524px;
 }
 
+#desktop-timeline { display: flex; }
+
+#mobile-timeline { display: none; }
+
 .ablock-2-text {
+    padding-top: 10px;
     justify-content: left;
     width: 570px;
-    gap: 90px;
+    gap: 100px;
 }
 
 .aspacer-2-3 {
@@ -904,8 +908,8 @@ body {
 .ablock-3-image {
     max-width: 572px;
     max-height: 575px;
-    min-width: 380px;
-    min-height: 380px;
+    min-width: 340px;
+    min-height: 340px;
     margin-right: 2rem;
 }
 
@@ -1515,6 +1519,9 @@ body {
     .acards-5 {
         gap: 1rem;
     }
+    .about-title {
+        font-size: 19px;
+    }
     .cblock-1 {
         height: 740px;
         gap: 40px;
@@ -1579,6 +1586,9 @@ body {
     }
     .block-1 {
         height: 600px;
+    }
+    #wave-canvas {
+        height: 674px;
     }
     .heading-1 {
         padding-top: 2rem;
@@ -1705,6 +1715,16 @@ body {
     }
     .ablock-5-card {
         width: 330px;
+    }
+    .abody-heading {
+        margin-left: 100px;
+        gap: 80px;
+    }
+    .about-title {
+        font-size: 19px;
+    }
+    .abody-text-5-panel {
+        font-size: 17px;
     }
     .aheading-5-2 {
         font-size: 24px;
@@ -1868,12 +1888,13 @@ body {
     .block-4-image-2 {
         max-width: 576px;
         max-height: 586px;
-        min-width: 380px;
-        min-height: 384px;
+        min-width: 340px;
+        min-height: 344px;
         display: flex;
     }
     .block-4-text {
         margin-left: 3rem;
+        margin-right: 2rem;
     }
     .spacer-4-5 {
         height: 120px;
@@ -1885,6 +1906,7 @@ body {
     .block-5-text {
         margin-left: 3rem;
         margin-bottom: 6rem;
+        margin-right: 2rem;
     }
     .heading-6 {
         padding-top: 14rem;
@@ -1950,7 +1972,7 @@ body {
         flex-direction: column;
         align-items: center;
         height: 1100px;
-        gap: 0.4rem;
+        gap: 2rem;
         margin-bottom: 6rem;
     }
     .block-8-card {
@@ -1965,9 +1987,12 @@ body {
     }
     .heading-9 {
         max-width: 520px;
-        min-width: 380px;
+        min-width: 340px;
         margin-left: 2rem;
         margin-right: 2rem;
+    }
+    .end-button {
+        color: #ffffff;
     }
     .block-10 {
         gap: 60px;
@@ -2003,8 +2028,14 @@ body {
     }
     .ablock-2-image {
         margin-left: 0rem;
-        max-width: 110px;
-        max-height: 400px;
+        max-width: 86px;
+        min-width: 86px;
+    }
+    #desktop-timeline {
+        display: none;
+    }
+    #mobile-timeline {
+        display: flex;
     }
     .ablock-2-text {
         width: 250px;
@@ -2022,14 +2053,15 @@ body {
         display: flex;
         max-width: 572px;
         max-height: 575px;
-        min-width: 380px;
-        min-height: 380px;
+        min-width: 340px;
+        min-height: 340px;
     }
     .ablock-3-image {
         display: none;
     }
     .ablock-3-text {
         margin-left: 3rem;
+        margin-right: 2rem;
         margin-bottom: 6rem;
     }
     .aspacer-3-4 {
@@ -2058,14 +2090,14 @@ body {
         height: 90px;
     }
     .aheading-5-1 {
-        min-width: 380px;
+        min-width: 320px;
         margin-left: 2rem;
         margin-right: 2rem;
         padding-bottom: 1rem;
     }
     .acards-5 {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 2rem;
     }
     .aspacer-5-6 {
         height: 120px;
