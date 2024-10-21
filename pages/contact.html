@@ -17,7 +17,7 @@
         <nav class="fc nav nav-color">
             <div class="fc">
                 <a href="../index.html" class="fc" style="text-decoration: none;">
-                    <img src="../assets/Cutout H Logo.png" width="34" height="34" alt="Go home"/>
+                    <img id="logo" src="../assets/Cutout H Logo.png" width="34" height="34" alt="Go home"/>
                     <span class="hind-vadodara-bold text-color heading" style="padding-left: 10px;">HOZCOL</span>
                 </a>
             </div>
@@ -28,7 +28,7 @@
                 <li><a href="contact.html"><span class="contact-button nunito-sans-extrabold text-color">Contact us</span></a></li>
             </ul>
             <div class="fc nav-menu">
-                <img id="menu_button" src="../assets/menu.svg" width="40" height="40" class="menu-button"/>
+                <img id="menu_button" src="../assets/menu.svg" width="36" height="36" class="menu-button"/>
                 <div id="menu" class="fcol menu vis">
                     <a class="fc nunito-sans-extrabold text-color nav-color" href="about.html">About us</a>
                     <a class="fc nunito-sans-extrabold text-color nav-color" href="contact.html">Consulting</a>
@@ -52,10 +52,10 @@
                     <span class="nunito-sans-regular text-color tl tip-1-2">Keep scrolling for our Community Owner Intake Form</span>
                 </div>
             </div>
-            <form class="fcol form-1" action="https://api.web3forms.com/submit" method="POST" id="form" class="needs-validation" novalidate>
+            <form class="fcol form-1 needs-validation" action="https://api.web3forms.com/submit" method="POST" id="form" novalidate>
                 <input type="hidden" name="access_key" value="7d72aed6-ba1e-4476-bf87-3161ff3eefc8">
-                <input type="hidden" name="from_name" value="Contact us">
-                <input type="hidden" name="subject" value="New Submission from www.hozcol.org"/>
+                <input type="hidden" name="from_name" value="www.hozcol.org">
+                <input type="hidden" name="subject" value="Contact Us Submission"/>
                 <input type="checkbox" name="botcheck" id="" style="display: none;"/>
                 <label class="outfit-bold text-color label-1" for="fname">Your Name / Alias</label>
                 <div class="fc form_name">
@@ -63,15 +63,14 @@
                     <input class="form-1-lname nunito-sans-extrabold white" type="text" id="lname" name="lname" maxlength="100" placeholder="Last">
                 </div>
                 <label class="outfit-bold text-color label-1" style="padding-top: 16px;" for="email">Email</label>
-                <input class="form-1-email nunito-sans-extrabold white" type="email" id="email" name="email" maxlength="100">
+                <input class="form-1-email nunito-sans-extrabold white" type="email" id="email" name="email" maxlength="100" required>
+                <div class="empty-feedback nunito-sans-regular text-error">Please enter an email address.</div>
+                <div class="invalid-feedback nunito-sans-regular text-error">Please enter a valid email address.</div> 
                 <label class="outfit-bold text-color label-1" style="padding-top: 16px;" for="message">Message</label>
-                <textarea class="form-1-message nunito-sans-extrabold white" id="message" name="message"></textarea>
-                <!-- Honeypot Spam Protection -->
-                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-                <!-- Custom Confirmation / Success Page -->
-                <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
-                <input type="hidden" name="redirect" value="https://hozcol.org/success">
-                <div style="width: auto; height: 16px;"></div>
+                <textarea class="form-1-message nunito-sans-extrabold white" id="message" name="message" rows="5" required></textarea>
+                <div class="empty-feedback nunito-sans-regular text-error">Please enter your message.</div>
+                <div style="width: auto; height: 8px;"></div>
+                <div id="result" class="nunito-sans-regular text-color success-msg"></div>
                 <button id="submit" class="contact-button nunito-sans-extrabold text-color" type="submit">Submit</button>
             </form>
             <a id="tip-2-link" href="https://forms.gle/CMH37GNFhTimCZke6" target="_blank" rel="noopener noreferrer">
@@ -144,6 +143,7 @@
             <span class="nunito-sans-regular pa text-color">Made with ❤️ in PA</span>
         </div>
         <script src="../scripts/contact.js"></script>
+        <script src="../scripts/main.js"></script>
     </body>
   </div>
 </html>

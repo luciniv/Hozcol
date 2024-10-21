@@ -15,6 +15,8 @@ html {
 }
 
 body {
+    width: 100%;
+    overflow-x: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,13 +51,18 @@ body {
 
 .white {background: #ffffff;}
 
-.text-color {color: #ffffff}
+.text-color {color: #ffffff;}
 
-.text-color-2 {color: #868D98}
+.text-color-2 {color: #868D98;}
 
-.text-color-3 {color: #B8B8B8}
+.text-color-3 {color: #B8B8B8;}
 
-.text-color-4 {color: #4F545C}
+.text-color-4 {color: #4F545C;}
+
+.text-error {
+    color: #FF5C00;
+    padding-left: 5px;
+}
 
 /* FONT SECTION ----------------------------------------*/
 .nunito-sans-regular {
@@ -93,6 +100,25 @@ body {
     font-weight: 700;
     font-style: normal;
     font-size: 34px;
+}
+
+/* VALIDATION CLASSES ----------------------------------------*/
+.invalid-feedback,
+.empty-feedback {
+  display: none;
+}
+
+.was-validated :placeholder-shown:invalid ~ .empty-feedback {
+  display: block;
+}
+
+.was-validated :not(:placeholder-shown):invalid ~ .invalid-feedback {
+  display: block;
+}
+
+.is-invalid,
+.was-validated :invalid {
+  border-color: #dc3545;
 }
 
 /* RE-USED ITEMS ----------------------------------------*/
@@ -1199,6 +1225,7 @@ body {
 .tip-1-1 {font-size: 26px;}
 
 .form-1 {
+    padding-top: 1rem;
     align-items: start;
     gap: 6px;
 }
@@ -1241,6 +1268,11 @@ body {
     border: none;
     font-size: 19px;
     padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+}
+
+.success-msg {
+    width: 300px;
+    padding-bottom: 8px;
 }
 
 .tip-2 {
@@ -1359,48 +1391,6 @@ body {
 
 .cbody-text-3 {
     padding: 0.8rem 1.1rem;
-}
-
-/* Success BLOCK 1 start ----------------------------------------*/
-.sblock-1 {
-    width: 100vw;
-    height: 100vh;
-}
-
-.sbody {
-    width: 26rem;
-    height: 23rem;
-    border-radius: 20px;
-    margin-bottom: 30px;
-}
-
-.sheading-1 {
-    width: 320px;
-    font-size: 38px;
-    padding-bottom: 30px;
-}
-
-.sicon {
-    width: 120px;
-    height: 120px;
-    border-radius: 20px;
-    border: 5px solid transparent;
-    background: 
-      linear-gradient(to right, #000000, #000000), 
-      linear-gradient(to right, #ff5c00 30%, #0076FF 70%); 
-    background-clip: padding-box, border-box;
-    background-origin: padding-box, border-box;
-}
-
-.sheading-2 {
-    width: 290px;
-    font-size: 23px;
-    padding: 30px 0px 6px 0px;
-}
-
-.sheading-3 {
-    width: 310px;
-    font-size: 18px;
 }
 
 @media (max-width: 1220px) {
@@ -1833,6 +1823,13 @@ body {
     .nunito-sans-extrabold {
         font-size: 17px;
     }
+    #logo {
+        width: 30px;
+        height: 30px;
+    }
+    .heading { 
+        font-size: 26px; 
+    }
     .nav-links {
         display: none;
     }
@@ -1841,6 +1838,10 @@ body {
     }
     .block-1 {
         height: 500px;
+    }
+    #wave-canvas {
+        height: 674px;
+
     }
     .heading-1 {
         padding-top: 4rem;
@@ -2036,9 +2037,9 @@ body {
         height: 220px;
     }
     .abody-text-2 {
-        max-width: 360px;
-        bottom: -22px;
-        font-size: 80px;
+        max-width: 340px;
+        bottom: -20px;
+        font-size: 74px;
         right: 28vw;
     }
     .ablock-2 {
