@@ -262,7 +262,7 @@ body {
 
 .slidingVertical span{
 	animation: topToBottom 16s linear infinite;
-    background: linear-gradient(to right, #FF5C00 20%, #0076FF 80%); 
+    background: linear-gradient(to right, #00ffff 20%, #4000ff 80%); 
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -1271,7 +1271,7 @@ body {
 }
 
 .success-msg {
-    width: 300px;
+    width: 400px;
     padding-bottom: 8px;
 }
 
@@ -1535,6 +1535,9 @@ body {
         height: 740px;
         gap: 40px;
     }
+    .cblock-1-text {
+        margin-left: 2rem;
+    }
     .cheading-1 {
         font-size: 32px;
     }
@@ -1567,6 +1570,9 @@ body {
         width: 367px;
         height: 200px;
         font-size: 17px;
+    }
+    .success-msg {
+        width: 360px;
     }
     .carrow {
         width: 280px;
@@ -1800,6 +1806,9 @@ body {
         height: 180px;
         font-size: 16px;
     }
+    .success-msg {
+        width: 320px;
+    }
     .carrow {
         width: 260px;
         right: 48vw;
@@ -1875,7 +1884,7 @@ body {
     }
     .block-2 {
         flex-direction: column;
-        min-height: 820px;
+        min-height: 800px;
     }
     .block-2-image {
         margin: 0;
@@ -2159,6 +2168,9 @@ body {
     }
     .form-1-message {
         width: 307px;
+    }
+    .success-msg {
+        width: 300px;
     }
     .tip-2 {
         display: flex;
