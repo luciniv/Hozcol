@@ -622,7 +622,6 @@ body {
 }
 
 /* .block-6-person {} */
-
 .icon-6 {
     width: 120px;
     height: 120px;
@@ -1273,6 +1272,10 @@ body {
 .success-msg {
     width: 400px;
     padding-bottom: 8px;
+}
+
+#alt-email-2 {
+    display: none;
 }
 
 .tip-2 {
@@ -1936,6 +1939,12 @@ body {
         margin-bottom: 6rem;
         margin-right: 2rem;
     }
+    .block-5-image {
+        max-width: 531px;
+        max-height: 499px;
+        min-width: 340px;
+        min-height: 330px;
+    }
     .heading-6 {
         padding-top: 14rem;
         padding-bottom: 20px;
@@ -1959,6 +1968,13 @@ body {
         margin-left: 2rem;
         margin-right: 2rem;
         font-size: 17px;
+    }
+    .icon-6 {
+        margin: 0;
+    }
+    .body-text-6, .body-text-6-1 {
+        margin: 0;
+        width: 280px;
     }
     .block-6-partners {
         padding-top: 2rem;
@@ -2045,7 +2061,7 @@ body {
         height: 220px;
     }
     .abody-text-2 {
-        max-width: 340px;
+        max-width: 600px;
         bottom: -20px;
         font-size: 74px;
     }
@@ -2133,7 +2149,7 @@ body {
     .cblock-1 {
         flex-direction: column;
         gap: 20px;
-        height: 1000px;
+        height: 1050px;
     }
     .cblock-1-text {
         margin-top: 3rem;
@@ -2141,22 +2157,30 @@ body {
         margin-left: 0rem;
     }
     .cheading-1 {
+        margin-top: 4rem;
         font-size: 24px;
         width: 307px;
     }
     .cheading-1-1 {
         font-size: 22px;
         width: 280px;
-        padding-bottom: 20px;
+        padding-bottom: 0;
+    }
+    #alt-email-1 {
+        display: none;
     }
     .tip-1 {
-        margin-bottom: 1rem;
+        margin: 1rem 18px 0.5rem 0;
+        width: 290px;
     }
     #form-redirect {
         display: none;
     }
     .tip-1-1 {
         font-size: 22px;
+    }
+    .tip-1-2 {
+        width: 250px;
     }
     .form-1 {
         padding-bottom: 20px;
@@ -2179,10 +2203,14 @@ body {
     .success-msg {
         width: 300px;
     }
+    #alt-email-2 {
+        display: flex;
+    }
     .tip-2 {
         display: flex;
         box-shadow: 0px 8px 10px #00000055;
         width: 290px;
+        margin-right: 18px;
     }
     #tip-2-link {
         text-decoration: none;
