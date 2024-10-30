@@ -1917,10 +1917,8 @@ body {
         display: none;
     }
     .block-4-image-2 {
-        max-width: 476px;
-        max-height: 486px;
-        min-width: 340px;
-        min-height: 344px;
+        max-width: 440px;
+        max-height: 444px;
         display: flex;
     }
     .block-4-text {
@@ -1942,8 +1940,6 @@ body {
     .block-5-image {
         max-width: 531px;
         max-height: 499px;
-        min-width: 340px;
-        min-height: 330px;
     }
     .heading-6 {
         padding-top: 14rem;
@@ -2061,9 +2057,11 @@ body {
         height: 220px;
     }
     .abody-text-2 {
-        max-width: 600px;
+        width: 330px;
         bottom: -20px;
+        right: 12vw;
         font-size: 74px;
+        margin: 0;
     }
     .ablock-2 {
         height: 700px;
@@ -2246,5 +2244,16 @@ body {
     }
     .cbody-text-3 {
         width: 330px;
+    }
+}
+
+@media (max-width: 600px) {
+    .block-4-image-2 {
+        max-width: 340px;
+        max-height: 344px;
+    }
+    .block-5-image {
+        max-width: 401px;
+        max-height: 369px;
     }
 }
