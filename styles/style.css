@@ -655,11 +655,41 @@ body {
 }
 
 .partner-6 {
-    transition: all 0.2s ease;
+    transition: transform 0.2s ease;
 }
 
 .partner-6:hover {
     transform: scale(1.1);
+}
+
+#YOU-base {
+    position: relative;
+    cursor: pointer;
+}
+
+.YOU-img {
+    top: 14px;
+    position: absolute;
+    opacity: 0;
+}
+
+.appear {
+    animation: appear 1s linear;
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    30% {
+        opacity: 0.8;
+    }
+    70% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .spacer-6-7 {
@@ -905,7 +935,7 @@ body {
 #mobile-timeline { display: none; }
 
 .ablock-2-text {
-    padding-top: 10px;
+    padding-top: 30px;
     justify-content: left;
     width: 570px;
     gap: 100px;
@@ -2079,8 +2109,9 @@ body {
         display: flex;
     }
     .ablock-2-text {
+        padding-top: 80px;
         width: 250px;
-        gap: 2rem;
+        gap: 2.2rem;
         margin-right: 0rem;
     }
     .text2 {
