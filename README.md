@@ -1,4 +1,4 @@
-# Hozcol ![Alt text](/assets/Cutout%20H%20Logo.png)
+# Hozcol
 Hozcol (the Horizon Collective) is a not-for-profit organization that provides community support to creators, studios, and businesses. We're a small team of community professionals 
 
 This repository contains Hozcol's current main website, hosted via GitHub Pages.
@@ -23,4 +23,5 @@ Want to reach out? Contact us here: hozcol.team@gmail.com
 ## Archive
 
 Here's Hozcol's original design plan:
+![Original Figma layout](/assets/Hozcol_Figma.png)
  
