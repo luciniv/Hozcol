@@ -10,11 +10,15 @@ Check out the `/assets` folder for our Discord mockups and other assets. These a
 
 Our Discord-themed graphics were created in Figma. All SVG graphics were sourced from Iconify, a popular Figma plugin.
 
-## Use our code
+## Tech stack
+- **Frontend:** HTML, CSS, JavaScript (static website)
+- **Design & Planning:** Figma
+
+## Development setup
 1. Clone the repository
 ```
-git clone https://github.com/luciniv/Hozcol repo-name
-cd repo-name
+git clone https://github.com/luciniv/Hozcol.git
+cd Hozcol
 ```
 2. Open `index.html` locally, or push to main and enable GitHub Pages in the repository's settings for free public hosting
 
